@@ -7,7 +7,7 @@ function somar(){
     }
     else{
         r=parseFloat(v1)+parseFloat(v2);
-        document.getElementById("resultado").innerHTML=`o resultrado da soma é: ${r}`
+        document.getElementById("resultadoSoma").innerHTML=`o resultrado da soma é: ${r}`
     }
 }
 
@@ -19,7 +19,7 @@ function multiplica(){
     }
     else{
         r=parseFloat(v1)*parseFloat(v2);
-        document.getElementById("resultado").innerHTML=`o resultrado da multiplicação é: ${r}`
+        document.getElementById("resultadoMultiplica").innerHTML=`o resultrado da multiplicação é: ${r}`
     }
 }
 
@@ -30,7 +30,7 @@ function dividir(){
         alert("Campos invalidos");
 }else{
     r=parseFloat(v1)/parseFloat(v2)
-    document.getElementById("resultado").innerHTML=`o resultado da divisão entre os valores é: ${r}`
+    document.getElementById("resultadoDividir").innerHTML=`o resultado da divisão entre os valores é: ${r}`
 }
 }
 
@@ -42,6 +42,6 @@ function subtrair(){
     }   
     else{
         r=parseFloat(v1)-parseFloat(v2);
-        document.getElementById("resultado").innerHTML=`o resultrado da subtração é: ${r}`
+        document.getElementById("resultadoSubtrair").innerHTML=`o resultrado da subtração é: ${r}`
     }
 }
