@@ -11,15 +11,15 @@ function calcularIMC() {
     altura = parseFloat(document.getElementById("altura").value)
     imc = peso / (altura * altura)
     if(imc < 18.5){
-        document.getElementById("resultadoIMCbaixo").innerHTML = `Seu IMC é: ${imc}`
+        document.getElementById("resultadoIMCbaixo").innerHTML = `Seu IMC é: ${imc} e baixo peso`
     }else{
         if(imc<25){
-        document.getElementById("resultadoIMCmedio").innerHTML = `Seu IMC é: ${imc}`
+        document.getElementById("resultadoIMCmedio").innerHTML = `Seu IMC é: ${imc} e peso normal`
         }else{
             if(imc<30){
-                document.getElementById("resultadoIMCsobrepso").innerHTML = `Seu IMC é: ${imc}`
+                document.getElementById("resultadoIMCsobrepso").innerHTML = `Seu IMC é: ${imc} e sobrepeso`
             }else{
-                document.getElementById("resultadoIMCobesidade").innerHTML = `Seu IMC é: ${imc}`
+                document.getElementById("resultadoIMCobesidade").innerHTML = `Seu IMC é: ${imc} e obesidade`
             }
         }
     }
